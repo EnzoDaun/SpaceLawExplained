@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+.gradient-text {
+    background: linear-gradient(45deg, #f7d700, #8b5cf6, #06b6d4, #f7d700);
+    background-size: 300% 300%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-animation 4s ease-in-out infinite;
+}
+
+@keyframes gradient-animation {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.animate-fade-in {
+    animation: fade-in 2s ease-in-out;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.title-container {
+    position: relative;
+    z-index: 100;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    padding: 3rem 1rem;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
+
+.title-container h1 {
+    line-height: 1.1 !important;
+    margin-bottom: 2rem !important;
+    text-shadow: 0 0 30px rgba(247, 215, 0, 0.4), 0 0 60px rgba(139, 92, 246, 0.3);
+    text-align: center;
+    width: 100%;
+}
+.subtitle {
+    color: #e2e8f0 !important;
+    text-shadow: 0 0 15px rgba(6, 182, 212, 0.6), 0 0 30px rgba(139, 92, 246, 0.3);
+    letter-spacing: 0.05em !important;
+    line-height: 1.4;
+    opacity: 0.95;
+    text-align: center;
+    width: 100%;
+    font-weight: 300 !important;
+}
